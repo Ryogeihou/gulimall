@@ -12,11 +12,16 @@
     <artifactId>gulimall-common</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.atguigu.gulimall</groupId>
+            <artifactId>gulimall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
+            <version>1.18.4</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
