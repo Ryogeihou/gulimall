@@ -11,9 +11,9 @@
         <module name="gulimall-common" />
         <module name="renren-fast" />
         <module name="gulimall-order" />
-        <module name="gulimall-member" />
         <module name="gulimall-ware" />
         <module name="gulimall-gateway" />
+        <module name="gulimall-member" />
         <module name="gulimall-product" />
         <module name="renren-generator" />
       </profile>

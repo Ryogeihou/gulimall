@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,12 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    @RequestMapping("/member/list")
+    public R memberCoupons () {
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("100-10");
+        return R.ok().put("coupons", Arrays.asList(couponEntity));
+    }
     /**
      * 列表
      */
