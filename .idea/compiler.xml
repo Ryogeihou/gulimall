@@ -21,12 +21,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="gulimall-coupon" options="-parameters" />
+      <module name="gulimall-coupon" options="" />
       <module name="gulimall-gateway" options="-parameters" />
-      <module name="gulimall-member" options="-parameters" />
-      <module name="gulimall-order" options="-parameters" />
-      <module name="gulimall-product" options="-parameters" />
-      <module name="gulimall-ware" options="-parameters" />
+      <module name="gulimall-member" options="" />
+      <module name="gulimall-order" options="" />
+      <module name="gulimall-product" options="" />
+      <module name="gulimall-ware" options="" />
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
     </option>
