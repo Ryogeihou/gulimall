@@ -25,11 +25,14 @@ import com.atguigu.common.utils.R;
  * @date 2021-09-09 19:28:30
  */
 @RestController
-@RequestMapping("member/umsmember")
-public class UmsMemberController {
+@RequestMapping("member/member")
+public class MemberController {
     @Autowired
     private UmsMemberService umsMemberService;
 
+    @RequestMapping("coupons")
+    public R test () {
+    }
     /**
      * 列表
      */
