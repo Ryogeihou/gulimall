@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.atguigu.gulimall.member.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,7 @@ import com.atguigu.common.utils.R;
  * @email ryogeihou@gmail.com
  * @date 2021-09-13 21:33:43
  */
+
 @RestController
 @RequestMapping("member/member")
 public class MemberController {
@@ -36,9 +38,9 @@ public class MemberController {
         MemberEntity memberEntity = new MemberEntity();
         memberEntity.setNickname("3333");
 
-//        R membercoupons = CouponFeignService.memberCoupons();
+        R membercoupons = CouponFeignService.memberCoupons();
 
-//        return R.ok().put("member", memberEntity).put("coupons", membercoupons.get("coupons"));
+        return R.ok().put("member", memberEntity).put("coupons", membercoupons.get("coupons"));
         return R.ok();
     }
 
