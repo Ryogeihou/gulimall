@@ -34,8 +34,8 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
     public List<CategoryEntity> listWithTree() {
         //查出所有分类
         List<CategoryEntity> entities = baseMapper.selectList(null);
-        //组装成父子结构
 
+        //组装成父子结构
         List<CategoryEntity> level1Menus = entities.stream().filter((categoryEntity) -> {
             return categoryEntity.getParentCid() == 0;
         }).map((menu)->{
@@ -47,8 +47,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
                     return (menu1.getSort()==null ? 0 : menu1.getSort()) - (menu2.getSort()==null ? 0 : menu2.getSort());
                 }
         ).collect(Collectors.toList());
-
-
         return level1Menus;
     }
 

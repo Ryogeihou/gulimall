@@ -1,0 +1,12 @@
+ssh:
+  #  enabled: false
+  known_hosts: /Users/ryo/.ssh/known_hosts
+  host: 127.0.0.1
+  port: 22
+  username: centos
+  password: root
+  forward:
+    from_host: 127.0.0.1
+    from_port: 3307
+    to_host: 13.230.140.173
+    to_port: 3306
